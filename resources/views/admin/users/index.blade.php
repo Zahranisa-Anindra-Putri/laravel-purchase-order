@@ -48,11 +48,9 @@
                         <a class="btn btn-xs btn-info" href="{{ route('admin.users.edit', [$user->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.users.index.edit') }}">
                             <i class="fa fa-pencil"></i>
                         </a>
-                        @if(!$user->hasRole('administrator'))
-                            <a href="{{ route('admin.users.destroy', [$user->id]) }}" class="btn btn-xs btn-danger user_destroy" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.users.index.delete') }}">
-                                <i class="fa fa-trash"></i>
-                            </a>
-                        @endif
+                        <a href="{{ route('admin.users.destroy', [$user->id]) }}" class="btn btn-xs btn-danger user_destroy" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.users.index.delete') }}">
+                            <i class="fa fa-trash"></i>
+                        </a>
                     </td>
                 </tr>
             @endforeach

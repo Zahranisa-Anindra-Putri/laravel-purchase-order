@@ -3,3 +3,8 @@
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+
+# Aturan khusus untuk file dengan ekstensi tertentu
+*.php text eol=lf
+*.css text eol=lf
+*.js text eol=lf
